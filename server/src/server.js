@@ -14,7 +14,7 @@ const start = async () => {
         }
 
         await connectDB(mongoURI);
-        app.listen(port, () =>
+        app.listen(port || 3000, () =>
             console.log(`Server is listening on port ${port}...`)
         );
     } catch (error) {
