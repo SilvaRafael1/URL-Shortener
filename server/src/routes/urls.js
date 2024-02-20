@@ -1,5 +1,5 @@
 import express from "express";
-import { nanoid } from "nanoid";
+import { customAlphabet } from "nanoid";
 import Url from "../models/Url.js";
 import { validateUrl } from "../utils/validateUrl.js";
 import { configDotenv } from "dotenv";
@@ -13,6 +13,7 @@ router.post("/short", async (req, res) => {
     const base = process.env.BASE;
     const port = process.env.PORT;
 
+    const nanoid = customAlphabet("123456789qwertyuiopasdfghjklzxcvbnm", 10)
     const urlId = nanoid();
     if (validateUrl(origUrl)) {
         try {
