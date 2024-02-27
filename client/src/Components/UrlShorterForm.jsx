@@ -34,23 +34,22 @@ const UrlShorterForm = () => {
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
-          {({ errors, touched, resetForm }) => (
+          {({ resetForm }) => (
             <Form>
               <div>
-                <label htmlFor="origUrl" className="font-bold">URL: </label>
+                <label htmlFor="origUrl" className="font-bold">URL:  </label>
                 <Field
                   name="origUrl"
                   id="origUrl"
                   type="text"
                   className={
-                    "form-control" +
-                    (errors.origUrl && touched.origUrl ? "is-invalid" : "")
+                    "p-1 w-[720px]" 
                   }
                 />
                 <ErrorMessage
                   name="origUrl"
                   component="div"
-                  className="is-invalid"
+                  className="text-red-500 font-bold my-3"
                 />
               </div>
               <div className="">
@@ -66,7 +65,7 @@ const UrlShorterForm = () => {
       {showUrl && (
         <div>
           Esta é a URL encurtada:{" "}
-          <a href={shortUrl} target="_blank" rel="noopener noreferrer">
+          <a href={shortUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500 font-semibold">
             {shortUrl}
           </a>
         </div>
