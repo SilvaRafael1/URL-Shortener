@@ -10,8 +10,7 @@ const router = express.Router();
 // Short URL Generator
 router.post("/short", async (req, res) => {
     const { origUrl } = req.body;
-    const base = process.env.BASE;
-    const port = process.env.PORT;
+    const port = 3333;
 
     const nanoid = customAlphabet("123456789qwertyuiopasdfghjklzxcvbnm", 10)
     const urlId = nanoid();

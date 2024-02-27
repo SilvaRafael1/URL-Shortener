@@ -43,8 +43,9 @@ const UrlShorterForm = () => {
                   id="origUrl"
                   type="text"
                   className={
-                    "p-1 w-[720px]" 
+                    "p-1 w-[720px] border-solid border-[1px] border-black rounded-sm" 
                   }
+                  placeholder="Digite aqui sua URL"
                 />
                 <ErrorMessage
                   name="origUrl"

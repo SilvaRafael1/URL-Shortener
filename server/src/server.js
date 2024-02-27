@@ -2,7 +2,7 @@ import app from "./app.js";
 import connectDB from "./db/db.js";
 import "dotenv/config";
 
-const port = process.env.PORT || 3000;
+const port = 3333;
 
 // Server setup and start DB
 const start = async () => {
@@ -14,7 +14,7 @@ const start = async () => {
         }
 
         await connectDB(mongoURI);
-        app.listen(port || 3000, () =>
+        app.listen(port, () =>
             console.log(`Server is listening on port ${port}...`)
         );
     } catch (error) {
