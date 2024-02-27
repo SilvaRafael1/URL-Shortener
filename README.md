@@ -6,11 +6,11 @@
 </h1>
 
 <p align="center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#pré-requisitos">Pré-requisitos</a> • 
- <a href="#features">Features</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#autor">Autor</a>
+ <a href="#dizzy-objetivo">Objetivo</a> •
+ <a href="#exclamation-pré-requisitos">Pré-requisitos</a> • 
+ <a href="#sparkles-features">Features</a> • 
+ <a href="#wrench-tecnologias">Tecnologias</a> • 
+ <a href="#bust_in_silhouette-autor">Autor</a>
 </p>
 
 ## :dizzy: Objetivo
@@ -74,7 +74,7 @@ $ npm start
 ## :sparkles: Features
 - [X] Encurtador de URL
 
-## Tecnologias
+## :wrench: Tecnologias
 - ``Express`` v^4.18.2
 - ``Mongoose`` v^8.1.1
 - ``Nanoid`` v^5.0.5
@@ -85,7 +85,7 @@ $ npm start
 - ``Tailwind CSS`` v^3.4.1
 - ``Vite`` v^5.1.0
 
-## Autor
+## :bust_in_silhouette: Autor
 | [<img src="https://avatars.githubusercontent.com/u/104951242?v=4" width="80px;"/>](https://github.com/SilvaRafael1) |
 | --- |
 | Rafael Augusto |
